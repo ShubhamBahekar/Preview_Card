@@ -1,0 +1,70 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(242, 242, 242);
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  max-width: 900px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+article {
+  padding: 40px;
+  color: white;
+}
+
+/* Background Colors */
+.sedan {
+  background-color: rgb(229, 124, 34);
+}
+.suv {
+  background-color: rgb(0, 39, 95);
+}
+.luxury {
+  background-color: rgb(11, 32, 56);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 25px 0;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 80px;
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: rgb(242, 242, 242);
+  border: 2px solid rgb(242, 242, 242);
+  transition: all 0.3s ease;
+}
+
+/* Mobile View Requirements (< 700px) */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+
+  .sedan {
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .luxury {
+    border-radius: 0px 0px 7px 7px;
+  }
+}
